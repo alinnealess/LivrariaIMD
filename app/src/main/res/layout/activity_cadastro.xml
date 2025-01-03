@@ -1,0 +1,107 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="#f5fdff">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Título da Tela -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#38727c"
+            android:gravity="center"
+            android:padding="16dp"
+            android:textColor="@android:color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <!-- Campo: Título -->
+        <EditText
+            android:id="@+id/et_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título do Livro (Obrigatório)"
+            android:padding="12dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text" />
+
+        <!-- Campo: Autor -->
+        <EditText
+            android:id="@+id/et_autor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Autor (Obrigatório)"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text" />
+
+        <!-- Campo: Editora -->
+        <EditText
+            android:id="@+id/et_editora"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Editora"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="text" />
+
+        <!-- Campo: ISBN -->
+        <EditText
+            android:id="@+id/et_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="ISBN (Obrigatório)"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="number" />
+
+        <!-- Campo: Descrição -->
+        <EditText
+            android:id="@+id/et_descricao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Descrição"
+            android:padding="12dp"
+            android:layout_marginBottom="8dp"
+            android:inputType="textMultiLine"
+            android:lines="3" />
+
+        <!-- Campo: URL da Imagem -->
+        <EditText
+            android:id="@+id/et_imagem_url"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="URL da Imagem (Obrigatório)"
+            android:padding="12dp"
+            android:layout_marginBottom="16dp"
+            android:inputType="textUri" />
+
+        <!-- Botão para Salvar -->
+        <Button
+            android:id="@+id/btn_salvar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Salvar Livro"
+            android:backgroundTint="#0097b2"
+            android:textColor="#FFFFFF" />
+        <!-- Botão Voltar para o Menu -->
+        <Button
+            android:id="@+id/btn_voltar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Voltar"
+            android:backgroundTint="#0097b2"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>

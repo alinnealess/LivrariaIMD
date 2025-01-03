@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="top|center_horizontal"
+    android:background="#f5fdff">
+
+    <!-- Barra de título -->
+    <TextView
+        android:id="@+id/tv_barra_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#38727c"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="Excluir Livro"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Campo para o ISBN -->
+    <EditText
+        android:id="@+id/et_isbn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite o ISBN do livro"
+        android:inputType="text"
+        android:layout_marginTop="24dp"
+        android:padding="12dp" />
+
+    <!-- Botão para excluir o livro -->
+    <Button
+        android:id="@+id/btn_excluir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Excluir Livro"
+        android:backgroundTint="#d32f2f"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+
+    <!-- Botão para voltar -->
+    <Button
+        android:id="@+id/btn_voltar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Voltar"
+        android:backgroundTint="#0097b2"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="16dp"
+        android:padding="12dp" />
+</LinearLayout>

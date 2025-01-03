@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LivrariaIMD"
+        tools:targetApi="31">
+
+        <!-- Atividade Login (Tela Inicial) -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Atividade do Menu -->
+        <activity
+            android:name=".MenuActivity"
+            android:exported="true"
+            android:label="Menu" />
+
+        <!-- Atividade de Cadastro -->
+        <activity
+            android:name=".CadastroActivity"
+            android:exported="true"
+            android:label="Cadastro de Livros" />
+
+        <!-- Atividade de Listagem -->
+        <activity
+            android:name=".ListagemActivity"
+            android:exported="true"
+            android:label="Listagem de Livros" />
+
+        <!-- Atividade de Detalhamento -->
+        <activity
+            android:name=".DetalheLivroActivity"
+            android:exported="true"
+            android:label="Detalhes do Livro" />
+
+        <!-- Atividade de Alterar -->
+        <activity
+            android:name=".AlterarLivroActivity"
+            android:exported="true"
+            android:label="Alterar Livro" />
+
+        <!-- Atividade de Excluir -->
+        <activity
+            android:name=".ExcluirLivroActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>
