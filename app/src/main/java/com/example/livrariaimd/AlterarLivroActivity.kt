@@ -80,7 +80,4 @@ class AlterarLivroActivity : AppCompatActivity() {
         binding.etImagemUrl.visibility = View.VISIBLE
         binding.btnSalvar.visibility = View.VISIBLE
     }
-
-
-
 }

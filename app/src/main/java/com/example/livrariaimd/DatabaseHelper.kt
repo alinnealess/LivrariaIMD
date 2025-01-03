@@ -5,7 +5,8 @@ import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
 
-class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, "books.db", null, 2) {
+class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, "books.db",
+    null, 2) {
 
     override fun onCreate(db: SQLiteDatabase) {
         db.execSQL(
@@ -107,7 +108,8 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, "books.db", n
         }.also { cursor.close() }
     }
 
-    fun atualizarLivro(isbn: String, titulo: String, autor: String, editora: String, descricao: String, imagemUrl: String?): Boolean {
+    fun atualizarLivro(isbn: String, titulo: String, autor: String, editora: String,
+                       descricao: String, imagemUrl: String?): Boolean {
         val db = writableDatabase
         val values = ContentValues().apply {
             put("titulo", titulo)

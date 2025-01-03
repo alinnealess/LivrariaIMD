@@ -4,7 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.livrariaimd.databinding.ActivityLoginBinding // Import do Binding gerado
+import com.example.livrariaimd.databinding.ActivityLoginBinding
 
 class LoginActivity : AppCompatActivity() {
 
@@ -25,7 +25,7 @@ class LoginActivity : AppCompatActivity() {
 
             if (username == "admin" && password == "admin") {
                 Toast.makeText(this, "Login bem-sucedido!", Toast.LENGTH_SHORT).show()
-                // Navegar para a tela principal ou próxima funcionalidade
+                // Navegar para a tela principal
                 startActivity(Intent(this, MenuActivity::class.java))
             } else {
                 Toast.makeText(this, "Usuário ou senha incorretos!", Toast.LENGTH_SHORT).show()
@@ -35,14 +35,14 @@ class LoginActivity : AppCompatActivity() {
         // Configuração do botão de cadastro
         binding.btnRegister.setOnClickListener {
             Toast.makeText(this, "Navegando para a tela de cadastro...", Toast.LENGTH_SHORT).show()
-            // Navegar para a tela de cadastro
+            // Navegar para a tela de cadastro (implementar futuramente)
             //startActivity(Intent(this, RegisterActivity::class.java))
         }
 
         // Configuração do texto "Esqueceu a senha?"
         binding.tvForgotPassword.setOnClickListener {
             Toast.makeText(this, "Redefinição de senha em breve!", Toast.LENGTH_SHORT).show()
-            // Navegar para a tela de redefinição de senha
+            // Navegar para a tela de redefinição de senha (implementar futuramente)
             //startActivity(Intent(this, ForgotPasswordActivity::class.java))
         }
     }

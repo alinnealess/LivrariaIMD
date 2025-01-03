@@ -22,19 +22,19 @@ class ListagemActivity : AppCompatActivity() {
         val dbHelper = DatabaseHelper(this)
         val livros = dbHelper.listarTodosLivros()
 
+        // Ordenar livros por título
+        val livrosOrdenados = livros.sortedBy { it.titulo }
+
         // Configurar RecyclerView
-        if (livros.isEmpty()) {
+        if (livrosOrdenados.isEmpty()) {
             Toast.makeText(this, "Nenhum livro encontrado.", Toast.LENGTH_SHORT).show()
-        }
-        if (livros.isNotEmpty()) {
+        } else {
             binding.rvLivros.layoutManager = LinearLayoutManager(this)
-            binding.rvLivros.adapter = LivroAdaptador(livros) { livro ->
+            binding.rvLivros.adapter = LivroAdaptador(livrosOrdenados) { livro ->
                 val intent = Intent(this, DetalheLivroActivity::class.java)
                 intent.putExtra("livro", livro)
                 startActivity(intent)
             }
-        } else {
-            Toast.makeText(this, "Nenhum livro cadastrado!", Toast.LENGTH_SHORT).show()
         }
 
         binding.btnVoltar.setOnClickListener {
