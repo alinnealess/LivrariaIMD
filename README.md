@@ -1,4 +1,4 @@
-# Livraria IMD 
+# Livraria IMD
 
 Aplicativo Android de um sistema  de cadastro e detalhamento de livros desenvolvido como avaliação da terceira unidade da disciplina de **Desenvolvimento para Dispositivos Móveis**  de 2024.2 da **Universidade Federal do Rio Grande do Norte**.
 
